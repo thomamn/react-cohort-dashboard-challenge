@@ -44,11 +44,81 @@
   */
 
 .cohort_manager_title {
-  width: 400px;
-  padding: 10px 0px 10px 20px;
-};
+  width: 350px;
+  padding: 10px 0px 10px 100px;
+}
 
 .cohort_manager_header {
   background-color: #000046;
   
+}
+
+.profile_icon {
+  padding: 10px 0px 15px 700px;
+}
+
+.left_menu{
+  background-color: #8a8a8a;
+  width: 100px;
+  height: 300px;
+}
+
+.main_page{
+  background-color: #88aec0;
+  height: 400px;
+  
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+  
+}
+
+.home_button{
+  padding: 10px 0px 10px 30px;
+  background-color: #07a348;
+}
+
+.profile_button{
+  padding: 10px 29px 10px 30px;
+  background-color: #a32b07;
+}
+
+.home{
+  background-color: #a30774;
+  padding: 10px 40px 10px 30px;
+  
+  
+}
+
+.poster{
+  background-color: #0777a3;
+  padding: 10px 40px 10px 30px;
+}
+
+.post{
+  background-color: #79a307;
+  padding: 10px 40px 10px 30px;
+}
+
+.post_list{
+  display: grid;
+  row-gap: 10px;
+}
+
+.profile_info{
+  background-color: #a30774;
+}
+
+.personal_data{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px; 
+  background-color: #a6dbeb;
+}
+
+.comment{
+  background-color: #dd1111;
 }
