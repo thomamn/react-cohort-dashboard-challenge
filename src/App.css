@@ -1,3 +1,4 @@
+/*
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,15 @@
 
 .read-the-docs {
   color: #888;
+}
+  */
+
+.cohort_manager_title {
+  width: 400px;
+  padding: 10px 0px 10px 20px;
+};
+
+.cohort_manager_header {
+  background-color: #000046;
+  
 }
