@@ -1,15 +1,34 @@
 import Comment_List from "./comment_list"
+import NewComment from "./new_comment"
 import { useState } from "react"
-export default function Post({post}){
+import { Link } from "react-router-dom"
+import Profile_Icon from "../../header/components/profile_icon"
+export default function Post({post, num}){
 
-    const [comments, setComments]=useState([1,2,3])
+
+    const [comments, setComments]=useState([{
+        user:post.user,
+        message:'Wrote this jsut to make things work'
+    }])
 
     return (
         <div className="post">
-            Hey! I&apos;m posting here! {post}
+            <Profile_Icon user={post.user}/> 
+             
+            <div className="name_title">
+                {post.user.firstName}&nbsp;{post.user.lastName}
+                <br/>
+                <Link to={"/post/"+num}>{post.title}</Link>
+            </div>
+            
+            
+            <br/>
+            <br/>
+            {post.message}
 
             <div className="commentSection">
                 <Comment_List comments={comments}/>
+                <NewComment comments={comments} setComments={setComments}/>
             </div>
         </div>
         

@@ -1,7 +1,9 @@
 import { useContext } from "react"
 import { userContext } from "../../App"
 import { Link } from "react-router-dom"
-export default function Profile_Icon({user}) {
+import Profile_Icon from "./profile_icon"
+
+export default function Up_Right({user}) {
 
     /*
     <svg className="profile_icon"
@@ -19,20 +21,15 @@ export default function Profile_Icon({user}) {
     */
 
 
-    const {firstName}=user
-    const {lastName}=user
 
     return (
         
-        <Link to={"/profile"}>
-           
-            <div className="circle">
-                {firstName[0]}{lastName[0]}
-                
-            </div>
+        
+        <div className="up_right">
+            <Profile_Icon user={user}/>
+        </div>
             
-            
-        </Link>
+        
         
             
         

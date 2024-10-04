@@ -11,9 +11,11 @@ export default function Home_Button() {
             </svg>
 
             
-
-
+            
+            
+            <br/>
             Home
+            
         </div>
         
         

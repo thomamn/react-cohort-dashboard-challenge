@@ -2,11 +2,17 @@ import Poster from "./components/poster"
 import Post_List from "./components/postList"
 import { useState } from "react"
 import { createContext } from 'react'
+import { useContext } from "react"
+import { postContext } from "../App"
 
-const postContext = createContext()
 
 export default function Home() {
-    const [posts, setPosts]=useState([1,2,3])
+
+    const posts=useContext(postContext).posts
+    const setPosts=useContext(postContext).setPosts
+    
+    
+    
 
     
 

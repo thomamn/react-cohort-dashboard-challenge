@@ -50,6 +50,10 @@
 
 .cohort_manager_header {
   background-color: #000046;
+  /*
+  display:grid;
+  grid-template-columns: 40fr 5fr ;
+  */
   
 }
 
@@ -58,7 +62,7 @@
 }
 
 .left_menu{
-  background-color: #8a8a8a;
+  background-color: #ffffff;
   width: 100px;
   height: 300px;
 }
@@ -77,28 +81,28 @@
 
 .home_button{
   padding: 10px 0px 10px 30px;
-  background-color: #07a348;
+  /*background-color: #07a348;*/
 }
 
 .profile_button{
   padding: 10px 29px 10px 30px;
-  background-color: #a32b07;
+  /*background-color: #a32b07;*/
 }
 
 .home{
-  background-color: #a30774;
+  /*background-color: #a30774;*/
   padding: 10px 40px 10px 30px;
   
   
 }
 
 .poster{
-  background-color: #0777a3;
+  background-color: #ffffff;
   padding: 10px 40px 10px 30px;
 }
 
 .post{
-  background-color: #79a307;
+  background-color: #ffffff;
   padding: 10px 40px 10px 30px;
 }
 
@@ -121,4 +125,29 @@
 
 .comment{
   background-color: #dd1111;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  background: #e60a0a;
+  
+  
+}
+
+.up_right{
+  float: right;
+  margin-right:60px;
+  margin-top: 15px
+
+}
+
+.name_title{
+  float:right;
+  margin-right:700px;
 }
