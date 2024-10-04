@@ -13,26 +13,23 @@ export default function Post({post, num}){
 
     return (
         <div className="post">
-            <Profile_Icon user={post.user}/> 
-             
+          <div className="post_header">
+            <Profile_Icon user={post.user} />
             <div className="name_title">
-                {post.user.firstName}&nbsp;{post.user.lastName}
-                <br/>
-                <Link to={"/post/"+num}>{post.title}</Link>
+              {post.user.firstName}&nbsp;{post.user.lastName}
+              <br />
+              <Link to={"/post/" + num}>{post.title}</Link>
             </div>
-            
-            
-            <br/>
-            <br/>
-            {post.message}
-
-            <div className="commentSection">
-                <Comment_List comments={comments}/>
-                <NewComment comments={comments} setComments={setComments}/>
-            </div>
+          </div>
+    
+          <br />
+          <br />
+          {post.message}
+    
+          <div className="commentSection">
+            <Comment_List comments={comments} />
+            <NewComment comments={comments} setComments={setComments} />
+          </div>
         </div>
-        
-        
-        
-    )
+      );
 }
