@@ -1,5 +1,8 @@
+import { useState } from "react"
+export default function Poster({posts, setPosts}){
 
-export default function Poster(){
+    const [newPost, setNewPost]=('')
+    
 
     return (
         <div className="poster">
@@ -9,15 +12,15 @@ export default function Poster(){
                 <label
                     >Logo:<input
                     type="text"
-                    name="firstName"
-                    //value={formData.firstName}
-                    //onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                    name="newPost"
+                    value={newPost}
+                    onChange={(e) => setNewPost( e.target.value )}
                     />
                     
                 </label>
 
                 
-                <input className="form__submit" type="submit" value="Post" />
+                <input className="post__submit" type="submit" value="Post" onClick={() => setPosts({...posts, newPost})}/>
             </form>
 
         </div>
