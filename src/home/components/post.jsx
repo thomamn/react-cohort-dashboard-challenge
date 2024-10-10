@@ -6,10 +6,7 @@ import Profile_Icon from "../../header/components/profile_icon"
 export default function Post({post, num}){
 
 
-    const [comments, setComments]=useState([{
-        user:post.user,
-        message:'Wrote this jsut to make things work'
-    }])
+    const [comments, setComments]=useState([])
 
     return (
         <div className="post">
@@ -25,7 +22,8 @@ export default function Post({post, num}){
           <br />
           <br />
           {post.message}
-    
+          
+          <hr/>
           <div className="commentSection">
             <Comment_List comments={comments} />
             <NewComment comments={comments} setComments={setComments} />

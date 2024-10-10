@@ -2,9 +2,14 @@ import Account from "./components/account"
 import Address from "./components/address"
 import Company from "./components/company_info"
 import Contact from "./components/contact_info"
-import { useState } from "react"
+import { useState, useContext } from "react"
+import Profile_Icon from "../header/components/profile_icon"
+import { userContext } from "../App"
 
 export default function Profile(){
+
+    const {user}=useContext(userContext)
+
 
     const [account, setAccount]=useState(
         {
@@ -45,7 +50,15 @@ export default function Profile(){
         <div className="profile">
             <h1>Profile</h1>
             <div className="profile_info">
-                <h1>FirstName Lastname</h1>
+            
+                <div className="profile_header">
+                    <Profile_Icon user={user}/>
+                    &nbsp; 
+                    <h1>FirstName Lastname</h1>
+                
+                    
+                </div>
+                <hr/>
 
                 <div className="personal_data">
                     <div><Account account={account} setAccount={setAccount}/></div>
@@ -55,7 +68,7 @@ export default function Profile(){
 
                     
                 </div>
-                <div>Save</div>
+                <button>Save</button>
             </div>
 
         </div>

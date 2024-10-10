@@ -25,10 +25,10 @@ export default function NewComment({comments, setComments}){
     return (
         <div className="commenter">
             <form className="comment_text">
+                <Profile_Icon user={user}/>
           
-          
-                <label>
-                    <Profile_Icon user={user}/>
+                <label className="comment_input">
+                    
                     
                     <input
                     type="text"

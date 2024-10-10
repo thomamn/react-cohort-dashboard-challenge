@@ -14,17 +14,20 @@ export default function Address({address, setAddress}){
                 </input>
                 </label>
                 <br/>
+                <br/>
                 <label>
                 Suite*:
                 <br/>
                 <input type="text" name="suite" onChange={(e) => setAddress( e.target.value )} value={address.suite}></input>
                 </label>
                 <br/>
+                <br/>
                 <label>
                 City*:
                 <br/>
                 <input type="text" name="city" onChange={(e) => setAddress( e.target.value )} value={address.city}></input>
                 </label>
+                <br/>
                 <br/>
                 <label>
                 Zipcode*:

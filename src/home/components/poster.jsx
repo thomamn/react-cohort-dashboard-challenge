@@ -2,7 +2,11 @@ import { useState } from "react"
 import { useContext } from "react" 
 import { userContext } from "../../App"
 import Post from "./post"
+import Post_Input from "./post_input"
+import Post_Title from "./post_title"
+import Profile_Icon from "../../header/components/profile_icon"
 export default function Poster({posts, setPosts}){
+
 
 
     const user=useContext(userContext).user
@@ -23,34 +27,25 @@ export default function Poster({posts, setPosts}){
 
     return (
         <div className="poster">
-            <form className="post_text">
+            <div>
+                <Profile_Icon user={user}/>
+            </div>
 
-                <label>
-                    Title:
-                    <input
-                        type="text"
-                        name="newPost_title"
-                        value={newPost.title}
-                        onChange={(e) => setNewPost({...newPost, title: e.target.value})}
-                    />
-                    
-                </label>
+            <form className="post_text">
+                
+                <Post_Title newPost={newPost} setNewPost={setNewPost}/>
                 <br/>
           
-                <label>
-                    Message:
-                    <input
-                        type="text"
-                        name="newPost_message"
-                        value={newPost.message}
-                        onChange={(e) => setNewPost({...newPost, message: e.target.value})}
-                    />
-                    
-                </label>
+                <Post_Input newPost={newPost} setNewPost={setNewPost}/>
 
                 <br/>
-                <input className="post__submit" type="submit" value="Post" onClick={(event) => updatePosts(event, newPost)}/>
+                
+                
             </form>
+
+            <div className="post_submitter">
+                <input className="post_submit" type="submit" value="Post" onClick={(event) => updatePosts(event, newPost)}/>
+            </div>
 
         </div>
         

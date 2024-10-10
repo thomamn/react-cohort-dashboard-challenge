@@ -14,11 +14,13 @@ export default function Company({company, setCompany}){
                 </input>
                 </label>
                 <br/>
+                <br/>
                 <label>
                 Catch Phrase*:
                 <br/>
                 <input type="text" name="catchPhrase" onChange={(e) => setCompany( e.target.value )} value={company.catchPhrase}></input>
                 </label>
+                <br/>
                 <br/>
                 <label>
                 Business Statement*:

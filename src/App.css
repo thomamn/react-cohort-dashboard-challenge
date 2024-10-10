@@ -64,12 +64,12 @@
 .left_menu{
   background-color: #ffffff;
   width: 100px;
-  height: 300px;
+  height: 1000px;
 }
 
 .main_page{
-  background-color: #88aec0;
-  height: 400px;
+  background-color: #F0F5FA;
+  height: 1000px;
   
 }
 
@@ -94,25 +94,45 @@
   padding: 10px 40px 10px 30px;
   
   
+  
 }
 
 .poster{
   background-color: #ffffff;
   padding: 10px 40px 10px 30px;
+  border-style: solid;
+  border-color:#bbbaba;
+  display: flex;
+  align-items: center; 
+  border-radius: 10px;
 }
 
 .post{
   background-color: #ffffff;
   padding: 10px 40px 10px 30px;
+  border-style: solid;
+  border-color:#bbbaba;
+  border-radius: 10px;
 }
+
+.post_text{
+  margin-left: 20px;
+}
+
+
 
 .post_list{
   display: grid;
   row-gap: 10px;
+  
 }
 
 .profile_info{
-  background-color: #a30774;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color:#bbbaba;
+
 }
 
 .personal_data{
@@ -120,12 +140,10 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px; 
-  background-color: #a6dbeb;
+  background-color: #ffffff;
 }
 
-.comment{
-  background-color: #dd1111;
-}
+
 
 .circle {
   width: 50px;
@@ -159,10 +177,77 @@
 .comment {
   display: flex;
   align-items: center; /* This ensures both items are aligned vertically */
+  margin-bottom: 16px;
+  
+}
+
+.comment_text {
+  display: flex;
+  align-items: center; /* This ensures both items are aligned vertically */
+  margin-bottom: 16px;
+  
+}
+
+.comment_input {
+  /* This ensures both items are aligned vertically */
+  margin-left: 20px;
+  
 }
 
 .commenter {
   display: flex;
   align-items: center; /* This ensures both items are aligned vertically */
 }
+
+.post_submitter {
+  display: flex;
+  align-items: center; /* This ensures both items are aligned vertically */
+  margin-left: 500px;
+  
+
+
+  
+}
+
+.post_submit {
+  
+  background-color: #002368;
+  color: #ffffff;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  
+}
+
+
+.profile_header {
+  display: flex;
+  align-items: center; /* This ensures both items are aligned vertically */
+  margin-left: 20px
+}
+
+.personal_data {
+  margin-left: 150px
+}
+
+.comment_message {
+  background-color: #e6ebf5;
+}
+
+input {
+  background-color: #e6ebf5;
+}
+
+.name_title {
+  color: #64648c;
+}
+
+.profile_button:hover{
+  background-color: #64dc78;
+}
+
+.home_button:hover{
+  background-color: #64dc78;
+}
+
 

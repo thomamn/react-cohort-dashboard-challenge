@@ -13,6 +13,7 @@ export default function Contact({contact, setContact}){
                 </input>
                 </label>
                 <br/>
+                <br/>
                 <label>
                 Website*:
                 <br/>
